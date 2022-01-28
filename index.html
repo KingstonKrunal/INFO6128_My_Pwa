@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>LAB - INFO6128</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;900&display=swap" rel="stylesheet" />
+    <link rel="manifest" href="manifest.json" />
+    <link rel="stylesheet" type="text/css" href="src/app.css" />
+  </head>
+ 
+  <body>
+    <div class="container">
+      <h1>You are Online!</h1>
+      <p>It's time to create an amazing Progressive Web App!</p>
+      <br> 
+      <input type="text" id="title" value="This is title" placeholder="TITLE"/>
+      <input type="text" id="text" value="This is text" placeholder="SOME TEXT"/>
+      <input type="text" id="url" value="https://www.linkedin.com/in/krunal-shah-7056b310b/" placeholder="URL"/>
+      <br>
+      <input type="button" id="btn" value="SHARE"/>
+      <!-- <button id="share">SHARE</button> -->
+    </div>
+  </body>
+
+  <script src="src/app.js"></script>
+
+  <script type="text/javascript">
+    const registerSW = async () => {
+      if ("serviceWorker" in navigator) {
+        try {
+          await navigator.serviceWorker.register(`${window.location.href}service-worker.js`);
+          console.log("Service Worker Registered");
+        } catch (e) {
+          console.error("Error registering Service Worker...", e);
+        }
+      }
+    };
+    registerSW();
+  </script>
+</html>
