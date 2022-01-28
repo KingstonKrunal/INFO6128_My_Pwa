@@ -6,6 +6,33 @@
   "orientation": "portrait",
   "background_color": "#fff",
   "theme_color": "#000",
+  "icons": [
+    {
+      "src": "assets/images/icon.png",
+      "type": "image/png",
+      "sizes": "48x48"
+    },
+    {
+      "src": "assets/images/icon.png",
+      "type": "image/png",
+      "sizes": "96x96"
+    },
+    {
+      "src":"assets/images/icon.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/images/icon.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "assets/images/icon.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
 
   "share_target": {
     "action": "https://kingstonkrunal.github.io/INFO6128_My_Pwa/",
